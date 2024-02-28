@@ -1,0 +1,52 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+         
+    <modelVersion>4.0.0</modelVersion>
+    
+    <groupId>com.hrms</groupId>
+    <artifactId>hr-management-system</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    
+<!--    <modules>-->
+<!--        <module>employee-service</module>-->
+<!--        <module>leave-management-service</module>-->
+<!--        <module>payroll-service</module>-->
+<!--        &lt;!&ndash; Add other modules here &ndash;&gt;-->
+<!--        &lt;!&ndash; e.g., <module>attendance-tracking-service</module> &ndash;&gt;-->
+<!--    </modules>-->
+    
+    <properties>
+        <!-- Define common properties here -->
+        <java.version>11</java.version>
+        <spring-boot.version>2.6.3</spring-boot.version>
+        <!-- Add other common properties -->
+    </properties>
+    
+    <dependencyManagement>
+        <dependencies>
+            <!-- Define common dependencies here -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-parent</artifactId>
+                <version>${spring-boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <!-- Add other common dependencies -->
+        </dependencies>
+    </dependencyManagement>
+    
+    <build>
+        <plugins>
+            <!-- Add common build plugins here -->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+            <!-- Add other common build plugins -->
+        </plugins>
+    </build>
+    
+</project>

@@ -1,0 +1,7 @@
+# Sample YAML configuration for Spring Boot application
+server:
+  port: 8080
+
+spring:
+  application:
+    name: hr-management-system
